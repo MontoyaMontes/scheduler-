@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viesport" content="width=device-width, initial-scale=1.0">
+	<title>Agenda</title>
+	<!-- CSS Style -->
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script></head>
+
+  <link rel="stylesheet" href="css/style.css">
+
+<body>
+  <div class="container">
+    <div class="clock">
+      <div>
+        <span class="clock-day"></span>
+      </div>
+      <span class="clock-time"></span>
+      <span class="clock-ampm"></span>
+    </div>
+  </div>
+
+  <!-- CONTENEDOR DE DÍAS-->
+
+  <div class="container">
+
+  <!-- LUNES -->
+  <div class="calendar dark">
+    <div class="calendar_header">
+      <button class="addButtonCalendar">  <i class="far fa-calendar-plus fa-2x"></i></button> <!--TODO implementar agregar objeto -->
+      <h1 class = "header_title">LUNES</h1>
+    </div>
+
+    <div class="calendar_events">
+      <!-- evento1 -->
+      <div class="event_item" onclick="window.open('zoommtg://zoom.us/join?confno=82954408164&pwd=data20221','_parent');">
+        <!-- <div class="ei_Dot "></div>  --> <!--Implementar en futuro-->
+        <div class="ei_Title">X a X am</div>
+        <div class="ei_Copy" >MATERIA</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MARTES -->
+  <div class="calendar dark">
+      <div class="calendar_header">
+        <button class="addButtonCalendar">  <i class="far fa-calendar-plus fa-2x"></i></button>
+        <h1 class = "header_title">MARTES</h1>
+      </div>
+
+
+      <!-- eventos MARTES -->
+      <div class="calendar_events">
+      </div>
+    </div>
+
+  <!-- MIERCOLES -->
+  <div class="calendar dark">
+      <div class="calendar_header">
+        <button class="addButtonCalendar">  <i class="far fa-calendar-plus fa-2x"></i></button>
+        <h1 class = "header_title">MIERCOLES</h1>
+      </div>
+
+      <div class="calendar_events">
+        <!-- eventos MIERCOLES -->
+      </div>
+    </div>
+
+  <!-- JUEVES -->
+  <div class="calendar dark">
+      <div class="calendar_header">
+        <button class="addButtonCalendar">  <i class="far fa-calendar-plus fa-2x"></i></button>
+        <h1 class = "header_title">JUEVES</h1>
+      </div>
+
+
+      <!-- eventos JUEVES -->
+      <div class="calendar_events">
+      </div>
+    </div>
+
+  <!-- VIERNES -->
+  <div class="calendar dark">
+    <div class="calendar_header">
+      <button class="addButtonCalendar">  <i class="far fa-calendar-plus fa-2x"></i></button>
+      <h1 class = "header_title">VIERNES</h1>
+    </div>
+
+    <!-- eventos VIENRES -->
+    <div class="calendar_events">
+    </div>
+  </div>  
+  
+</div>
+<!-- FIN CONTENEDOR DÍAS -->
+
+
+<!--TODO list-->
+  <div class="container">
+    <h1 class="styling">Tareas</h1>    
+  </div>
+
+  <div class="container">
+    <div class="myTodo">
+      <div class="inputvalue">
+        <button class="addButton"><i class="fas fa-plus"></i></button>
+        <input class="inputVal" type="text" placeholder="Nueva tarea..." value="">
+      </div>           
+      <div class="todoLists"></div>
+    </div>
+  </div>
+
+<!--ZOOM-->
+<div class="container">
+  <h1 class="styling">Zoom link generator</h1>    
+</div>
+
+<div class="container">
+  <div class="zoomGenerator">
+    <div class="zoomInput">
+      <button class="generateButton"><i class="fas fa-plus"></i>GENERAR</button>
+      <input class="zoomString zoomCode" type="text" placeholder="0123456789" value="">
+      <input class="zoomString zoomPass" type="text" placeholder="password" value="">
+      <input class="zoomString zoomName" type="text" placeholder="nombre" value="">
+      <span class="zoomString zoomLink">link</span>
+    </div>
+    <div class="link"></div>
+  </div>
+</div>
+
+	<!-- js file link -->
+	<script src="js/script.js"></script>
+
+</body>
+</html>
